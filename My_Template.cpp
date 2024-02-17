@@ -79,6 +79,7 @@ void sin (v(p(A,B)) &ar) { for(auto &i : ar) { cin >> i.ff >> i.ss; } }
 const ll INF = 1e18;
 const ll MOD = 1e9 + 7;
 const ll mod = 998244353;
+int mod=1e9+7;
 bool prime(ll n) {if(n == 1) return false; for(int i = 2; i * i <= n; i++) if(n % i == 0) return false;return true;}
 ll POW (ll a, ll p, ll m) { ll res = 1; while (p > 0) { if(p % 2 == 0){ p /= 2; a = ((a%m)*(a%m))%m;} else{ res = ((res%m)*(a%m))%m; p--; }}return res;}
 ll bs_sqrt(ll x) { ll left = 0, right = 2000000123; while (right > left) { ll mid = (left + right) / 2; if (mid * mid > x) right = mid;else left = mid + 1;}return left - 1;}
@@ -99,8 +100,8 @@ v(int) yy = {1,-1,1,-1,-1,1,0,0};
 v(int) xs = {0,0,1,-1};
 v(int) ys = {1,-1,0,0};
 
+
 void solve() {
-    
 }
     
 int32_t main() {
